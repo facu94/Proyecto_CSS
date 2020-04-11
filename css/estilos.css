@@ -1,0 +1,266 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+form,
+footer,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Helvetica;
+  vertical-align: baseline;
+}
+
+.titulo {
+	font-family: Georgia !important;
+}
+
+header{
+	background: rgb(188, 85, 78);
+	color: white;
+	flex-direction: row;
+	align-items: center;
+}
+
+.flex-container {
+  display: flex;
+
+}
+
+h1 {
+	font-size: 2.5em;
+	padding: 0.2em;
+}
+
+li {
+	display: inline;
+	vertical-align: bottom;
+	 justify-content: center;
+}
+
+li a:link, li a:visited{
+	font-size: 1.2em;
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: orange;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.principal {
+	width: 100%;
+	height: 648px;
+	background-image: url(../images/inicial2.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+	display: flex;
+  	justify-content: center;
+	align-items: flex-start;
+}
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+	padding: 20px;
+	margin-top: 30px; 
+	background: rgba(255, 255, 255,0.3);
+	text-align: center;
+	border-radius: 15px;
+}
+
+#banner h2 {
+	font-size: 3em;
+}
+
+#banner p {
+	font-size: 1.5em;
+}
+
+.lugar {
+	display: flex;
+}
+
+.lugar h2{
+	font-size: 4em;
+	text-align: center;
+}
+.imagen-principal {
+	width: 25%;
+	padding: 10px; 
+}
+
+#imagen {
+	border-radius: 15px;
+	height: 100%;
+	justify-content: center;
+	transition: transform 1s;
+}
+
+#imagen:hover {
+	transform: scale(1.05);
+	-webkit-filter: grayscale(90%);
+}
+
+div p {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.imagen-secundaria {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	padding: 10px;
+}
+
+.contenido{
+	display: inline-flex;
+	justify-content: flex-start;
+}
+
+.descripcion {
+	width: 33%;
+	padding-top: 25px;
+}
+
+#galeria {
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.playa{
+	background: rgb(252, 252, 236);
+}
+
+.parque{
+	background: rgb(239, 249, 234);
+}
+
+.rio{
+	background: rgb(252, 242, 234);
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+footer > div {
+	padding: 20px;
+	margin: 15px;
+	width: 40%;
+}
+
+footer div * {
+	text-align: left;
+	padding-top: 7px; 
+}
+
+input, textarea {
+	border: 1px solid red; 
+	width: 100%;
+}
+
+.contacto {
+	border: 1px solid red;
+	border-radius: 15px;
+	background: rgb(252, 242, 234);
+}
+
+button {
+	background-color: rgb(247, 183, 135);
+	border-radius: 5px;
+	height: 35px;
+}
+
+@media (max-width: 900px) {
+	header {
+		justify-content: center;
+	}
+
+	.lugar {
+	}
+
+	#banner {
+		width: 70%;
+		padding: 30px 20px; 
+	}
+
+	.lugar * {
+		justify-content: center;
+		width: 50%;
+	}
+
+	.descripcion *{
+		width: 100%;
+	}
+
+	.imagen-principal {
+		display: none !important;
+	}
+}
+
+@media (max-width: 450px) {
+	header{
+		flex-direction: column;
+	}
+
+
+
+	#galeria {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	#galeria div {
+		display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+	}
+
+	#galeria * {
+		width: 90%;
+	}
+
+	.imagen-principal {
+		display: none !important;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer * {		
+		text-align: center !important;
+	}
+
+	footer > div {
+		width: 80%;
+	}
+
+}
